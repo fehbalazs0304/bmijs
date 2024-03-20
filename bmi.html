@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="style.css">
+<title>BMI</title>
+</head>
+<body>
+    <main class="container">
+        <heder class="row">
+            <div class="col-12 text-center text-primary">
+                <h1>Testömegindex</h1>
+            </div>
+        </heder>
+        <section class="bg-light col-12">
+            <h2>Adatok</h2>
+            <form>
+                <fieldset class="row">
+                    <div class="col-xs-12 col-md-6 mb-3">
+                        <div class="input-group">
+                            <span class="input-group-text">Magasság</span>
+                            <input type="number" id="magassag" minlength="0" maxlength="500" class="form-control">
+                            <span class="input-group-text">cm</span>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 mb-3">
+                        <div class="input-group">
+                            <span class="input-group-text">Testsúly</span>
+                            <input type="number" id="suly" minlength="0" maxlength="500" class="form-control">
+                            <span class="input-group-text">kg</span>
+                        </div>
+                    </div>
+                </fieldset>
+                <div>
+                    <button type="button" onclick="index()" class="mb-3 btn btn-secondary">BMI számitás</button>
+                </div>
+            </form>
+            <div>
+                <h2>Eredmény</h2>
+                <p>Testömegindex: <span id="eredmeny"></span></p>
+            </div>
+        </section>
+    </main>
+<script src="testtomeg.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
